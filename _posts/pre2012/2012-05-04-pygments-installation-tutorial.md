@@ -9,7 +9,7 @@ tags: [Jekyll, Pygments]
 
 在Windows环境下安装Pygments
 
-##1, 安装Python
+## 安装Python
 
 安装Python通常有两种方法：
 
@@ -17,7 +17,7 @@ tags: [Jekyll, Pygments]
 
 - 安装来自Python.org的Python 
 
-##2, 安装easy_install
+## 安装easy_install
 
 1. 下载脚本：http://peak.telecommunity.com/dist/ez_setup.py
 
@@ -25,26 +25,27 @@ tags: [Jekyll, Pygments]
 
 3. 添加环境变量，比如：C:\Python\Scripts\
 
-##3, 安装Pygments
+##安装Pygments
 
-1,打开命令提示符，执行：
+### 打开命令提示符，执行：
 
 
 {% highlight rb %}
 puts "Hello,world!"
 {% endhighlight %}
 
-2,生成css文件：
+### 生成css文件：
 
 {% highlight rb %}
 pygmentize -S default -f html > css/pygments/default.css
 {% endhighlight %}
 
-3,在html中包括css文件
+### 在html中包括css文件
 
-##4， 安装补丁
+### 安装补丁
 
-为了防止出现错误："Liquid eror: bad file descriptor"，你需要安装该补丁([下载地址](https://gist.github.com/1185645))。然后执行以下命令：
+为了防止出现错误：`Liquid eror: bad file descriptor`，你需要安装该补丁([下载地址](https://gist.github.com/1185645))。然后执行以下命令：
+
 {% highlight sh linenos %}
 cd /c/Ruby192/lib/ruby/gems/1.9.1/gems/albino-1.3.3/lib; 
 patch < 0001-albino-windows-refactor.patch
