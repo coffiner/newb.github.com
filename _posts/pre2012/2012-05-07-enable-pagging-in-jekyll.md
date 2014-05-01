@@ -9,9 +9,10 @@ tags: [Jekyll, Blogging]
 
 Jekyll默认支持分页功能，然而仅支持在html文件中使用，而不支持markdown。您可以通过以下步骤为你的博客添加分页功能：
 
-##修改_config.yml配置文件
+## 修改`_config.yml`配置文件
 
 添加以下选项：
+
 {% highlight html %}
 markdown: rdiscount
 pygments: true
@@ -22,12 +23,11 @@ production: false
 paginate: 3 //the number of post per page
 {% endhighlight %}
 
-##在html文件中使用paginator
+## 在html文件中使用paginator
 
 示例代码如下：
 
-<pre><code>&lt;div id="post-pagination" class="pagination"&gt;
-
+{% highlight html %}
   {% if paginator.previous_page %}
   &lt;p class="previous"&gt;
     {% if paginator.previous_page == 1 %}
@@ -72,7 +72,7 @@ paginate: 3 //the number of post per page
   &lt;/p&gt;
   {% endif %}
 
-&lt;/div&gt;</code></pre>
+{% endhighlight %}
 
 需要说明的是，上述代码并不会产生一个名为page1的文件夹，所以当您点击第１页会会提示页面不存在。以下代码则解决了这个问题：
 
