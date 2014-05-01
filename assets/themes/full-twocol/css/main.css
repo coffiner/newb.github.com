@@ -1,5 +1,4 @@
 body {
-	background: #eee url('http://x.libdd.com/farm1/c8b5b1/6e704b51/348A8.png');
 	overflow: hidden;
 	font-family: Songti;
 }
@@ -140,6 +139,22 @@ body {
 	margin-bottom: 36px; 
 	word-wrap: break-word;
 }
+
+.post code{
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: 'Monaco';
+}
+
+.post h3{
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.post li{
+    font-size: 16px;
+}
+
 .page-results {
 	font-size: 23px;
 }
