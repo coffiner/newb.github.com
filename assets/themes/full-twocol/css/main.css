@@ -496,12 +496,14 @@ ul.pages li{
 
 .date { 
    color: #777;
-   background: url(http://x.libdd.com/farm1/dc389b/c6766d81/FB418.png) no-repeat; 
    position: absolute;
    z-index: 20;
    margin: 10px 0 0 -9px; 
    width: 52px;
    height: 61px;
+   border: #CABCBC solid 1px;
+   background-color: #FDFDFD;
+   border-radius: 5px;
 }
 .date span { 
    line-height: 1;
