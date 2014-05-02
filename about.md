@@ -20,6 +20,3 @@ tagline: Supporting tagline
 - 500px: http://500px.com/joshualeung
 - Github: http://joshualeung.github.com
 
-
-{% include JB/comments %}
-
