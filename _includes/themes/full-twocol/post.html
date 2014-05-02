@@ -1,8 +1,10 @@
 <ul id="post-list">
+            {% if page.date %}
 			<span class="date" style="position: absolute; top: auto; bottom: auto;">
                   <span class="month">{{ page.date | date:"%b"}}</span>
                   <span class="day">{{ page.date | date:"%d"}}</span>
                </span>
+            {% endif %}
 	<!--text-->
 		<li class="post text">
 			<div class="body">
