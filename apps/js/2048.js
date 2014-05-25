@@ -18,6 +18,7 @@ var cell = {
 
 var dataMatrix = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 var score = 0;
+var maxCellValue = 2;
 var autoPlaying = false;
 
 function getCanvas()
@@ -106,6 +107,10 @@ function selectRandomCell()
 
 function increaseScore(delta)
 {
+    if (delta > maxCellValue)
+    {
+        maxCellValue = delta;
+    }
     score += delta;
     $("#score").text(score.toString());
 }
@@ -295,7 +300,15 @@ function resetGame()
             dataMatrix[i][j] = 0;
         }
     }
-    addNewCell();
+    
+    if (maxCellValue > 4)
+    {
+        dataMatrix[0][0] = maxCellValue;
+    }
+    else
+    {
+        addNewCell();
+    }
     repaintCanvas();
 }
 
@@ -330,7 +343,6 @@ function toggleAutoPlay()
 }
 
 $(document).ready(function(){
-    repaintCanvas();
     $(document).keyup(function(e){
         //console.log("pressed: " + e.keyCode);
         if (isGameOver())
@@ -339,7 +351,6 @@ $(document).ready(function(){
         }
         onMove(e.keyCode - 37);
     });
-    addNewCell();
     $("#autoplayBtn").on("click", function(){
         toggleAutoPlay();
     });
@@ -349,4 +360,5 @@ $(document).ready(function(){
     });
 
     $("#gameOverMsg").hide();
+    resetGame();
 });
