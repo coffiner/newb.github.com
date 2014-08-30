@@ -8,19 +8,14 @@ tagline: Supporting tagline
 
 ## 关于
 	
+
 七弦，码农一枚，就职于腾讯。曾参与QQ PC客户端开发，现在的方向为后台开发与数据分析。
 
-## 兴趣
+自认伪文艺，喜欢摄影、摇滚、历史，向往草原与大海。
 
-Linux | 数据挖掘 | 机器学习 | Android | Node.JS
+你可以在下面这些网站找到我:
 
-&&
-
-摇滚 | 摄影 | 口琴 | 游泳 | 游玩
-			
-## 联系
-
-- 豆瓣：http://www.douban.com/people/joshualeung/
-- 500px: http://500px.com/joshualeung
-- Github: http://joshualeung.github.com
+- [豆瓣](http://www.douban.com/people/joshualeung/)
+- [500px](http://500px.com/joshualeung)
+- [Github](http://joshualeung.github.com)
 
